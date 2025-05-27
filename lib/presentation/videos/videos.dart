@@ -1,0 +1,1 @@
+export 'view/vidoes_screen.dart';
