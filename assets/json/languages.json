@@ -1,0 +1,174 @@
+[
+    {
+        "iso": "en",
+        "isoName": "English"
+    },
+    {
+        "iso": "es",
+        "isoName": "Spanish"
+    },
+    {
+        "iso": "fr",
+        "isoName": "French"
+    },
+    {
+        "iso": "de",
+        "isoName": "German"
+    },
+    {
+        "iso": "it",
+        "isoName": "Italian"
+    },
+    {
+        "iso": "pt",
+        "isoName": "Portuguese"
+    },
+    {
+        "iso": "ru",
+        "isoName": "Russian"
+    },
+    {
+        "iso": "zh",
+        "isoName": "Chinese"
+    },
+    {
+        "iso": "ja",
+        "isoName": "Japanese"
+    },
+    {
+        "iso": "ko",
+        "isoName": "Korean"
+    },
+    {
+        "iso": "ar",
+        "isoName": "Arabic"
+    },
+    {
+        "iso": "hi",
+        "isoName": "Hindi"
+    },
+    {
+        "iso": "bn",
+        "isoName": "Bengali"
+    },
+    {
+        "iso": "pa",
+        "isoName": "Punjabi"
+    },
+    {
+        "iso": "vi",
+        "isoName": "Vietnamese"
+    },
+    {
+        "iso": "id",
+        "isoName": "Indonesian"
+    },
+    {
+        "iso": "tl",
+        "isoName": "Filipino"
+    },
+    {
+        "iso": "tr",
+        "isoName": "Turkish"
+    },
+    {
+        "iso": "fa",
+        "isoName": "Persian"
+    },
+    {
+        "iso": "th",
+        "isoName": "Thai"
+    },
+    {
+        "iso": "pl",
+        "isoName": "Polish"
+    },
+    {
+        "iso": "uk",
+        "isoName": "Ukrainian"
+    },
+    {
+        "iso": "nl",
+        "isoName": "Dutch"
+    },
+    {
+        "iso": "sv",
+        "isoName": "Swedish"
+    },
+    {
+        "iso": "no",
+        "isoName": "Norwegian"
+    },
+    {
+        "iso": "da",
+        "isoName": "Danish"
+    },
+    {
+        "iso": "fi",
+        "isoName": "Finnish"
+    },
+    {
+        "iso": "he",
+        "isoName": "Hebrew"
+    },
+    {
+        "iso": "ro",
+        "isoName": "Romanian"
+    },
+    {
+        "iso": "cs",
+        "isoName": "Czech"
+    },
+    {
+        "iso": "hu",
+        "isoName": "Hungarian"
+    },
+    {
+        "iso": "el",
+        "isoName": "Greek"
+    },
+    {
+        "iso": "sr",
+        "isoName": "Serbian"
+    },
+    {
+        "iso": "hr",
+        "isoName": "Croatian"
+    },
+    {
+        "iso": "sk",
+        "isoName": "Slovak"
+    },
+    {
+        "iso": "bg",
+        "isoName": "Bulgarian"
+    },
+    {
+        "iso": "ms",
+        "isoName": "Malay"
+    },
+    {
+        "iso": "sw",
+        "isoName": "Swahili"
+    },
+    {
+        "iso": "ta",
+        "isoName": "Tamil"
+    },
+    {
+        "iso": "te",
+        "isoName": "Telugu"
+    },
+    {
+        "iso": "ml",
+        "isoName": "Malayalam"
+    },
+    {
+        "iso": "kn",
+        "isoName": "Kannada"
+    },
+    {
+        "iso": "mr",
+        "isoName": "Marathi"
+    }
+]
