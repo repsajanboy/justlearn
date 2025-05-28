@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:justlearn/presentation/bottom_navigation/bottom_nav.dart';
 import 'package:justlearn/presentation/landing/landing.dart';
 
 import 'app_router_names.dart';
@@ -9,6 +10,14 @@ class AppRouter {
       case RouteNames.landing:
         return MaterialPageRoute(
           builder: (_) => const LandingScreen(),
+        );
+      case RouteNames.selectLanguage:
+        return MaterialPageRoute(
+          builder: (_) => const SelectLanguageScreen(),
+        );
+      case RouteNames.menu:
+        return MaterialPageRoute(
+          builder: (_) => const BottomNavScreen(),
         );
       default:
         return MaterialPageRoute(

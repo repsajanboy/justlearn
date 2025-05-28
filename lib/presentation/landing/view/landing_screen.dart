@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:justlearn/routing/app_router_names.dart';
 
 class LandingScreen extends StatelessWidget {
   const LandingScreen({super.key});
@@ -15,70 +16,49 @@ class LandingScreen extends StatelessWidget {
         ),
         child: SafeArea(
           child: Center(
-            child: Container(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  SizedBox(height: 70.0),
-                  Image(
-                    image: AssetImage('assets/images/logo/justlearn-white.png'),
-                    width: MediaQuery.of(context).size.width * .5,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                SizedBox(height: 70.0),
+                Image(
+                  image: AssetImage('assets/images/logo/justlearn-white.png'),
+                  width: MediaQuery.of(context).size.width * .5,
+                ),
+                SizedBox(height: 15.0),
+                Center(
+                  child: Text(
+                    'Learn Languages',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontSize: 20.0, color: Colors.white),
                   ),
-                  SizedBox(height: 15.0),
-                  Container(
-                    width: MediaQuery.of(context).size.width * .5,
-                    child: Center(
-                      child: Text(
-                        'Learn Languages',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(fontSize: 20.0, color: Colors.white),
-                      ),
-                    ),
-                  ),
-                  Expanded(
-                    child: Container(
-                      padding: EdgeInsets.only(bottom: 20.0),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.end,
-                        children: [
-                          Container(
-                            child: Material(
-                              color: Colors.white,
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(30.0)),
-                              elevation: 5.0,
-                              child: MaterialButton(
-                                onPressed: () {
-                                  Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                      builder: (context) {
-                                        return Container();
-                                      }
-                                    ),
-                                  );
-                                },
-                                minWidth:
-                                    MediaQuery.of(context).size.width * .85,
-                                height: 75.0,
-                                child: Text(
-                                  'GET STARTED',
-                                  style: TextStyle(
-                                    fontFamily: 'WorkSans',
-                                    fontSize: 22.0,
-                                    color: Color(0xFF3061cc),
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
+                ),
+                Expanded(
+                  child: Container(
+                    padding: EdgeInsets.only(bottom: 20.0),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        ElevatedButton(
+                          onPressed: () {
+                            Navigator.pushNamed(context, RouteNames.selectLanguage);
+                          },
+                          child: Padding(
+                            padding: const EdgeInsets.all(20.0),
+                            child: Text(
+                              'GET STARTED',
+                              style: TextStyle(
+                                fontSize: 22,
+                                color: Color(0xFF3061cc),
+                                fontWeight: FontWeight.bold,
                               ),
                             ),
-                          )
-                        ],
-                      ),
+                          ),
+                        )
+                      ],
                     ),
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
           ),
         ),
