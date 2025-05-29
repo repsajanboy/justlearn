@@ -41,7 +41,7 @@ class SelectLanguageScreen extends StatelessWidget {
                       shrinkWrap: true,
                       itemCount: state.languages?.length,
                       itemBuilder: (context, index) {
-                        LanguageModel language = state.languages![index];
+                        LanguageModel? language = state.languages?[index];
                         return GestureDetector(
                           onTap: () {
                             //add bloc event for filtering tutors per language
@@ -58,7 +58,7 @@ class SelectLanguageScreen extends StatelessWidget {
                                   ),
                                 ),
                                 child: ListTile(
-                                  title: Text('${language.isoName}'),
+                                  title: Text('${language?.isoName}'),
                                   trailing: Icon(Icons.keyboard_arrow_right),
                                 ),
                               ),
