@@ -40,7 +40,7 @@ class LandingScreen extends StatelessWidget {
                       children: [
                         ElevatedButton(
                           onPressed: () {
-                            Navigator.pushNamed(context, RouteNames.selectLanguage);
+                            Navigator.pushNamed(context, RouteNames.login);
                           },
                           child: Padding(
                             padding: const EdgeInsets.all(20.0),
