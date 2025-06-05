@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:justlearn/presentation/widgets/widgets.dart';
+import 'package:justlearn/routing/app_router_names.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -70,17 +71,22 @@ class LoginScreen extends StatelessWidget {
               ),
               SizedBox(height: 20.0),
               ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, RouteNames.menu);
+                },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Color(0xFF3061cc),
                   elevation: 5.0,
                 ),
-                child: Text(
-                  'Log In',
-                  style: TextStyle(
-                    fontSize: 16.0,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 16.0),
+                  child: Text(
+                    'Log In',
+                    style: TextStyle(
+                      fontSize: 16.0,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
                   ),
                 ),
               ),
