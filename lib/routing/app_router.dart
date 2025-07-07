@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:justlearn/presentation/bottom_navigation/bottom_nav.dart';
 import 'package:justlearn/presentation/landing/landing.dart';
 import 'package:justlearn/presentation/login/view/login_screen.dart';
+import 'package:justlearn/presentation/signup/signup.dart';
 
 import 'app_router_names.dart';
 
@@ -19,6 +20,10 @@ class AppRouter {
       case RouteNames.login:
         return MaterialPageRoute(
           builder: (_) => const LoginScreen(),
+        );
+      case RouteNames.signup:
+        return MaterialPageRoute(
+          builder: (_) => const SignupScreen(),
         );
       case RouteNames.menu:
         return MaterialPageRoute(
