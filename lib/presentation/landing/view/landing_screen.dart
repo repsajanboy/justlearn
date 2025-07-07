@@ -9,9 +9,13 @@ class LandingScreen extends StatelessWidget {
     return Scaffold(
       body: Container(
         decoration: BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage('assets/images/getStartedBG.jpg'),
-            fit: BoxFit.cover,
+          gradient: RadialGradient(
+            radius: 0.7,
+            colors: [
+              Colors.blue.shade200,
+              Colors.blue.shade500,
+              Colors.blue.shade900,
+            ],
           ),
         ),
         child: SafeArea(
@@ -24,12 +28,16 @@ class LandingScreen extends StatelessWidget {
                   image: AssetImage('assets/images/logo/justlearn-white.png'),
                   width: MediaQuery.of(context).size.width * .5,
                 ),
-                SizedBox(height: 15.0),
+                SizedBox(height: 10.0),
                 Center(
                   child: Text(
                     'Learn Languages',
                     textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: 20.0, color: Colors.white),
+                    style: TextStyle(
+                      fontFamily: 'Nunito',
+                      fontSize: 20.0,
+                      color: Colors.white,
+                    ),
                   ),
                 ),
                 Expanded(
@@ -39,20 +47,53 @@ class LandingScreen extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
                         ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.all(
+                                Radius.circular(10.0),
+                              ),
+                            ),
+                          ),
                           onPressed: () {
                             Navigator.pushNamed(context, RouteNames.signup);
                           },
                           child: Padding(
-                            padding: const EdgeInsets.all(20.0),
+                            padding: const EdgeInsets.all(8.0),
                             child: Text(
-                              'GET STARTED',
+                              'Sign up with email',
                               style: TextStyle(
-                                fontSize: 22,
+                                fontFamily: 'WorkSans',
+                                fontSize: 16,
                                 color: Color(0xFF3061cc),
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
                           ),
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              'Already have an account?',
+                              style: TextStyle(
+                                fontFamily: 'WorkSans',
+                                color: Colors.white70,
+                              ),
+                            ),
+                            TextButton(
+                              onPressed: () {
+                                Navigator.pushNamed(context, RouteNames.login);
+                              },
+                              child: Text(
+                                'Login',
+                                style: TextStyle(
+                                  fontFamily: 'WorkSans',
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
+                          ],
                         )
                       ],
                     ),
