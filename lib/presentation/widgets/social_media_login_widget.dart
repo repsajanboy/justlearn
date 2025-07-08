@@ -5,13 +5,14 @@ import 'term_of_use_widget.dart';
 
 Widget socialMediaLoginWidget() {
   return Padding(
-    padding: const EdgeInsets.only(top: 16.0),
+    padding: const EdgeInsets.only(top: 4.0),
     child: Column(
       children: [
         Text(
           'or',
           style: TextStyle(
-            fontSize: 18.0,
+            fontFamily: 'WorkSans',
+            fontSize: 16.0,
           ),
         ),
         Column(
@@ -21,8 +22,13 @@ Widget socialMediaLoginWidget() {
               child: ElevatedButton(
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(8.0),
+                    ),
+                  ),
                   backgroundColor: Color(0xFF3061cc),
-                  elevation: 5.0
+                  elevation: 5.0,
                 ),
                 child: Padding(
                   padding: const EdgeInsets.symmetric(vertical: 16.0),
@@ -37,6 +43,7 @@ Widget socialMediaLoginWidget() {
                       Text(
                         "Log in with Facebook",
                         style: TextStyle(
+                          fontFamily: 'WorkSans',
                           fontSize: 16.0,
                           fontWeight: FontWeight.bold,
                           color: Colors.white,
@@ -52,9 +59,13 @@ Widget socialMediaLoginWidget() {
               child: ElevatedButton(
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.red,
-                  elevation: 5.0
-                ),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(8.0),
+                      ),
+                    ),
+                    backgroundColor: Colors.red,
+                    elevation: 5.0),
                 child: Padding(
                   padding: const EdgeInsets.symmetric(vertical: 16.0),
                   child: Row(
@@ -68,6 +79,7 @@ Widget socialMediaLoginWidget() {
                       Text(
                         "Log in with Google",
                         style: TextStyle(
+                          fontFamily: 'WorkSans',
                           fontSize: 16.0,
                           fontWeight: FontWeight.bold,
                           color: Colors.white,

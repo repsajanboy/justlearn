@@ -13,19 +13,27 @@ Widget termOfUse() {
         children: [
           TextSpan(
             text: 'By signing in, you are agreeing to our\n',
+            style: TextStyle(
+              fontFamily: 'WorkSans',
+            ),
           ),
           TextSpan(
             text: 'Terms of Services',
             style: TextStyle(
+              fontFamily: 'WorkSans',
               fontWeight: FontWeight.bold,
             ),
           ),
           TextSpan(
             text: ' and ',
+            style: TextStyle(
+              fontFamily: 'WorkSans',
+            )
           ),
           TextSpan(
             text: 'Privacy Policy',
             style: TextStyle(
+              fontFamily: 'WorkSans',
               fontWeight: FontWeight.bold,
             ),
           ),
