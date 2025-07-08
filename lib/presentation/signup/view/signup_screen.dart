@@ -18,11 +18,12 @@ class SignupScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 SizedBox(height: 5.0),
-                Container(
+                SizedBox(
                   height: 60.0,
                   child: Text(
                     'Sign Up'.toUpperCase(),
                     style: TextStyle(
+                      fontFamily: 'Nunito',
                       fontSize: 50.0,
                       fontWeight: FontWeight.w900,
                       color: Color(0xFF3061cc),
@@ -35,6 +36,8 @@ class SignupScreen extends StatelessWidget {
                 TextField(
                   decoration: InputDecoration(
                     hintText: 'Enter your full name',
+                    hintStyle: TextStyle(
+                        fontFamily: 'WorkSans', color: Colors.black54),
                     prefixIcon: Icon(
                       Icons.person,
                     ),
@@ -43,24 +46,36 @@ class SignupScreen extends StatelessWidget {
                       horizontal: 30.0,
                     ),
                     border: OutlineInputBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(16.0)),
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(8.0),
+                      ),
                     ),
                     enabledBorder: OutlineInputBorder(
-                      borderSide:
-                          BorderSide(color: Color(0xFF3061cc), width: 1.0),
-                      borderRadius: BorderRadius.all(Radius.circular(16.0)),
+                      borderSide: BorderSide(
+                        color: Color(0xFF3061cc),
+                        width: 1.0,
+                      ),
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(8.0),
+                      ),
                     ),
                     focusedBorder: OutlineInputBorder(
-                      borderSide:
-                          BorderSide(color: Color(0xFF3061cc), width: 2.0),
-                      borderRadius: BorderRadius.all(Radius.circular(16.0)),
+                      borderSide: BorderSide(
+                        color: Color(0xFF3061cc),
+                        width: 2.0,
+                      ),
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(8.0),
+                      ),
                     ),
                   ),
                 ),
-                SizedBox(height: 8.0),
+                SizedBox(height: 16.0),
                 TextField(
                   decoration: InputDecoration(
                     hintText: 'Enter your email',
+                    hintStyle: TextStyle(
+                        fontFamily: 'WorkSans', color: Colors.black54),
                     prefixIcon: Icon(
                       Icons.email,
                     ),
@@ -69,24 +84,36 @@ class SignupScreen extends StatelessWidget {
                       horizontal: 30.0,
                     ),
                     border: OutlineInputBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(16.0)),
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(8.0),
+                      ),
                     ),
                     enabledBorder: OutlineInputBorder(
-                      borderSide:
-                          BorderSide(color: Color(0xFF3061cc), width: 1.0),
-                      borderRadius: BorderRadius.all(Radius.circular(16.0)),
+                      borderSide: BorderSide(
+                        color: Color(0xFF3061cc),
+                        width: 1.0,
+                      ),
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(8.0),
+                      ),
                     ),
                     focusedBorder: OutlineInputBorder(
-                      borderSide:
-                          BorderSide(color: Color(0xFF3061cc), width: 2.0),
-                      borderRadius: BorderRadius.all(Radius.circular(16.0)),
+                      borderSide: BorderSide(
+                        color: Color(0xFF3061cc),
+                        width: 2.0,
+                      ),
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(8.0),
+                      ),
                     ),
                   ),
                 ),
-                SizedBox(height: 8.0),
+                SizedBox(height: 16.0),
                 TextField(
                   decoration: InputDecoration(
                     hintText: 'Enter your password',
+                    hintStyle: TextStyle(
+                        fontFamily: 'WorkSans', color: Colors.black54),
                     prefixIcon: Icon(
                       Icons.lock,
                     ),
@@ -101,26 +128,85 @@ class SignupScreen extends StatelessWidget {
                       horizontal: 30.0,
                     ),
                     border: OutlineInputBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(16.0)),
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(8.0),
+                      ),
                     ),
                     enabledBorder: OutlineInputBorder(
-                      borderSide:
-                          BorderSide(color: Color(0xFF3061cc), width: 1.0),
-                      borderRadius: BorderRadius.all(Radius.circular(16.0)),
+                      borderSide: BorderSide(
+                        color: Color(0xFF3061cc),
+                        width: 1.0,
+                      ),
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(8.0),
+                      ),
                     ),
                     focusedBorder: OutlineInputBorder(
-                      borderSide:
-                          BorderSide(color: Color(0xFF3061cc), width: 2.0),
-                      borderRadius: BorderRadius.all(Radius.circular(16.0)),
+                      borderSide: BorderSide(
+                        color: Color(0xFF3061cc),
+                        width: 2.0,
+                      ),
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(8.0),
+                      ),
                     ),
                   ),
                 ),
-                SizedBox(height: 30.0),
+                SizedBox(height: 16.0),
+                TextField(
+                  decoration: InputDecoration(
+                    hintText: 'Re-enter your password',
+                    hintStyle: TextStyle(
+                        fontFamily: 'WorkSans', color: Colors.black54),
+                    prefixIcon: Icon(
+                      Icons.lock,
+                    ),
+                    suffixIcon: IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.visibility,
+                      ),
+                    ),
+                    contentPadding: EdgeInsets.symmetric(
+                      vertical: 10.0,
+                      horizontal: 30.0,
+                    ),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(8.0),
+                      ),
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Color(0xFF3061cc),
+                        width: 1.0,
+                      ),
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(8.0),
+                      ),
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Color(0xFF3061cc),
+                        width: 2.0,
+                      ),
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(8.0),
+                      ),
+                    ),
+                  ),
+                ),
+                SizedBox(height: 20.0),
                 ElevatedButton(
                   onPressed: () {
                     Navigator.pushNamed(context, RouteNames.login);
                   },
                   style: ElevatedButton.styleFrom(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(8.0),
+                      ),
+                    ),
                     backgroundColor: Color(0xFF3061cc),
                     foregroundColor: Colors.white,
                   ),
@@ -129,12 +215,40 @@ class SignupScreen extends StatelessWidget {
                     child: Text(
                       'Sign Up',
                       style: TextStyle(
+                        fontFamily: 'WorkSans',
                         fontSize: 16.0,
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
                       ),
                     ),
                   ),
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      'Already have an account?',
+                      style: TextStyle(
+                        fontFamily: 'WorkSans',
+                      ),
+                    ),
+                    TextButton(
+                      onPressed: () {
+                        Navigator.pushNamed(context, RouteNames.login);
+                      },
+                      style: TextButton.styleFrom(
+                        padding: EdgeInsets.zero,
+                      ),
+                      child: Text(
+                        'Login',
+                        style: TextStyle(
+                          fontFamily: 'WorkSans',
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
                 socialMediaLoginWidget()
               ],
